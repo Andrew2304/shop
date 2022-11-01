@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  const name_url = "";
+  // const name_url = "";
+  const name_url = "/shop";
   const getMenuChild = (items) => {
     let html = "";
     items.map((item) => {
