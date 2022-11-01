@@ -7,7 +7,9 @@
   Version: 1.0
 
 -----------------------------------------------------------------------------------  */
+/*----------------------------------------------------------------------------------- 
  /*----------------------------------------------------------------------------------- 
+/*----------------------------------------------------------------------------------- 
     
   CSS INDEX
   ===================
@@ -77,24 +79,21 @@
 /*----------------------------------------
   5. Google Fonts
 ----------------------------------------*/
-@import 'https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Roboto:400,500,700';
-
-
-
+@import "https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Roboto:400,500,700";
 
 /*************************************
   6. Custom-content all   
  **************************************/
 .boxed-layout .wrapper {
-    box-shadow: -3px 0 50px -2px rgba(0, 0, 0, 0.14);
-    margin: auto;
-    position: relative;
-    width: 1240px;
+  box-shadow: -3px 0 50px -2px rgba(0, 0, 0, 0.14);
+  margin: auto;
+  position: relative;
+  width: 1240px;
 }
 .boxed-layout .sticky {
-    left: auto;
-    margin: auto;
-    width: 1240px;
+  left: auto;
+  margin: auto;
+  width: 1240px;
 }
 /* ========================================
   7. Home Version-1
@@ -127,6 +126,14 @@
 .product-img img {
   width: 100%;
 }
+.product-img-2 img {
+  height: 300px;
+  object-fit: cover;
+}
+.product-img-3 img {
+  height: 80px;
+  object-fit: cover;
+}
 .product-info {
   background: #f6f6f6 none repeat scroll 0 0;
   padding: 20px 0;
@@ -134,7 +141,7 @@
 }
 .product-title {
   color: #434343;
-  font-family: "Raleway",sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -153,13 +160,14 @@
 }
 .pro-price {
   color: #666666;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 20px;
   z-index: 9;
 }
-.action-button {}
+.action-button {
+}
 .action-button > li {
   display: inline-block;
   margin-right: 10px;
@@ -182,8 +190,8 @@
   line-height: 28px;
 }
 .action-button > li:hover > a {
-  background: #FF7F00;
-  border-color: #FF7F00;
+  background: #ff7f00;
+  border-color: #ff7f00;
   color: #fff;
 }
 .product-item:hover {
@@ -192,7 +200,8 @@
 /* -------------------------------------
     7.3 Up comming product section
 ------------------------------------- */
-.up-comming-pro {}
+.up-comming-pro {
+}
 .up-comming-pro-img {
   width: 47.3%;
 }
@@ -239,7 +248,8 @@
 /* -------------------------------------
     7.4 Banner section
 ------------------------------------- */
-.banner {}
+.banner {
+}
 .banner-item {
   position: relative;
 }
@@ -285,7 +295,8 @@
 .pro-tab-menu {
   margin: 25px 0 30px;
 }
-.pro-tab-menu > ul {}
+.pro-tab-menu > ul {
+}
 .pro-tab-menu ul li {
   display: inline-block;
   margin-left: 30px;
@@ -306,7 +317,8 @@
 /* -------------------------------------
     7.6 Blog section
 ------------------------------------- */
-.blog-img {}
+.blog-img {
+}
 .blog-img > a {
   display: block;
 }
@@ -371,7 +383,8 @@
   opacity: 0;
   transition: all 0.5s ease 0s;
 }
-.blog-item .blog-desc::before, .blog-item .blog-desc::after {
+.blog-item .blog-desc::before,
+.blog-item .blog-desc::after {
   bottom: 20px;
   content: "";
   left: 20px;
@@ -383,18 +396,19 @@
   transition: opacity 0.35s ease 0s, transform 0.5s ease 0s;
 }
 .blog-item .blog-desc::before {
-border-bottom: 1px solid #fefefe;
-border-top: 1px solid #fefefe;
-transform: scale(0, 1);
+  border-bottom: 1px solid #fefefe;
+  border-top: 1px solid #fefefe;
+  transform: scale(0, 1);
 }
 .blog-item .blog-desc::after {
-border-left: 1px solid #fefefe;
-border-right: 1px solid #fefefe;
-transform: scale(1, 0);
+  border-left: 1px solid #fefefe;
+  border-right: 1px solid #fefefe;
+  transform: scale(1, 0);
 }
-.blog-item:hover .blog-desc::before, .blog-item:hover .blog-desc::after {
-opacity: 1;
-transform: scale(1);
+.blog-item:hover .blog-desc::before,
+.blog-item:hover .blog-desc::after {
+  opacity: 1;
+  transform: scale(1);
 }
 .blog-item:hover .blog-desc {
   opacity: 1;
@@ -405,11 +419,15 @@ transform: scale(1);
 .blog-item .blog-title,
 .blog-item .blog-desc p,
 .blog-item .read-more a,
-.blog-item .blog-meta li a { color: #fefefe; }
+.blog-item .blog-meta li a {
+  color: #fefefe;
+}
 
 .blog-item .blog-title:hover a,
 .blog-item .read-more a:hover,
-.blog-item .blog-meta li a:hover { color: #ccc; }
+.blog-item .blog-meta li a:hover {
+  color: #ccc;
+}
 /* ==========================================
   8.  Home version-2
 ============================================= */
@@ -443,7 +461,7 @@ transform: scale(1);
   font-size: 13px;
 }
 .banner-button a:hover {
-  color: #FF7F00;
+  color: #ff7f00;
 }
 .banner-2::before {
   border-right: 270px solid #f6f6f6;
@@ -549,7 +567,7 @@ transform: scale(1);
   top: -20px;
 }
 .product-item-2:hover .product-info {
-  border-radius: 0;  
+  border-radius: 0;
 }
 .product-item-2:hover .action-button {
   bottom: -40px;
@@ -709,11 +727,12 @@ transform: scale(1);
 /* -------------------------------------
     9.1 Breadcrumbs section
 ------------------------------------- */
-.breadcrumbs-section {}
-.breadcrumbs {
-  background: #f6f6f6 url("img/breadcrumb/1.png") no-repeat scroll center center; 
+.breadcrumbs-section {
 }
-.overlay-bg { 
+.breadcrumbs {
+  background: #f6f6f6 url("img/breadcrumb/1.png") no-repeat scroll center center;
+}
+.overlay-bg {
   position: relative;
 }
 .overlay-bg::before {
@@ -756,11 +775,11 @@ transform: scale(1);
 .breadcrumb-list > li::before {
   content: "_";
   left: 0;
-  color: #666666; 
+  color: #666666;
   transition: all 0.3s ease 0s;
 }
 .breadcrumb-list > li:hover::before {
-  color: #ff7f00; 
+  color: #ff7f00;
 }
 .breadcrumb-list > li > a {
   color: #666666;
@@ -798,7 +817,9 @@ transform: scale(1);
 .shop-tab li.active a {
   color: #ff7f00;
 }
-.shop-tab, .short-by, .showing {
+.shop-tab,
+.short-by,
+.showing {
   width: 33.3337%;
 }
 .short-by > span {
@@ -812,7 +833,7 @@ transform: scale(1);
 /* -------------------------------------
     9.3 Shop List
 ------------------------------------- */
- .shop-list.product-item {
+.shop-list.product-item {
   background: #f6f6f6 none repeat scroll 0 0;
   overflow: hidden;
 }
@@ -835,7 +856,7 @@ transform: scale(1);
 }
 .shop-list p {
   color: #666;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 /* -------------------------------------
     9.4 Pagination
@@ -958,7 +979,8 @@ transform: scale(1);
   text-align: left;
   width: 50%;
 }
-.price_slider_amount > input#amount {}
+.price_slider_amount > input#amount {
+}
 .ui-widget-content {
   background: #eee none repeat scroll 0 0;
   border: medium none;
@@ -968,7 +990,9 @@ transform: scale(1);
 .ui-slider .ui-slider-range {
   background: #ff7f00 none repeat scroll 0 0;
 }
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
   background: #ff7f00 none repeat scroll 0 0;
   border: medium none;
   border-radius: 0;
@@ -1002,12 +1026,24 @@ transform: scale(1);
   line-height: 30px;
   padding-left: 20px;
 }
-.widget-color ul li.color-1:before {background: #ffa07a;}
-.widget-color ul li.color-2:before {background: #e9967a;}
-.widget-color ul li.color-3:before {background: #fe5858;}
-.widget-color ul li.color-4:before {background: #00b2ee;}
-.widget-color ul li.color-5:before {background: #00eeb3;}
-.widget-color ul li.color-6:before {background: #8dc63f;}
+.widget-color ul li.color-1:before {
+  background: #ffa07a;
+}
+.widget-color ul li.color-2:before {
+  background: #e9967a;
+}
+.widget-color ul li.color-3:before {
+  background: #fe5858;
+}
+.widget-color ul li.color-4:before {
+  background: #00b2ee;
+}
+.widget-color ul li.color-5:before {
+  background: #00eeb3;
+}
+.widget-color ul li.color-6:before {
+  background: #8dc63f;
+}
 /* -------------------------------------
     9.10 Widget operating system
 ------------------------------------- */
@@ -1069,7 +1105,7 @@ transform: scale(1);
   padding: 0 5px;
 }
 .p-c a.active img {
-  border: 1px solid #FF7F00;
+  border: 1px solid #ff7f00;
 }
 #gallery_01.slick-arrow-3 .arrow-next.slick-arrow {
   right: -3px;
@@ -1220,11 +1256,15 @@ input.cart-plus-minus-box {
 /* -------------------------------------
     11.2 Cart table content
 ------------------------------------- */
-.table-content table, .table-content table th, .table-content table td {
+.table-content table,
+.table-content table th,
+.table-content table td {
   border: 1px solid #eee;
   border-collapse: collapse;
 }
-table {width: 100%}
+table {
+  width: 100%;
+}
 .table-content table thead th {
   color: #666666;
   font-family: raleway;
@@ -1266,7 +1306,8 @@ table {width: 100%}
 .pro-thumbnail-info > p {
   margin-bottom: 0;
 }
-.product-price, .product-subtotal {
+.product-price,
+.product-subtotal {
   font-family: roboto;
   font-size: 16px;
   font-weight: 700;
@@ -1404,7 +1445,7 @@ table {width: 100%}
   border-top: 1px solid #eee;
 }
 .order-info-list {
-  text-transform: uppercase;  
+  text-transform: uppercase;
   text-align: center;
 }
 .order-info-list li {
@@ -1631,7 +1672,8 @@ table {width: 100%}
 .about-photo img {
   width: 100%;
 }
-.about-description {}
+.about-description {
+}
 .about-description p {
   color: #666;
 }
@@ -1676,7 +1718,7 @@ table {width: 100%}
   z-index: -1;
 }
 .bg-shape:hover:before {
- background: #ff7f00 none repeat scroll 0 0;
+  background: #ff7f00 none repeat scroll 0 0;
 }
 /*====================================
   14. Contact Page
@@ -1730,8 +1772,8 @@ table {width: 100%}
 .form-messege {
   margin-top: 10px;
 }
-.form-messege.success{
-  color: #1AA162;
+.form-messege.success {
+  color: #1aa162;
 }
 .form-messege.error {
   color: #f10;
@@ -1770,10 +1812,10 @@ table {width: 100%}
   16. Bankground youtube video
 ------------------------------------- */
 .mb_YTPBar {
-  display: none!important;
+  display: none !important;
 }
 .mbYTP_wrapper {
-  z-index: -2!important;
+  z-index: -2 !important;
 }
 /* -------------------------------------
   17. Dotted-overlay
@@ -1789,7 +1831,3 @@ table {width: 100%}
   z-index: -1;
 }
 /*================================================*/
-
-
-
-
