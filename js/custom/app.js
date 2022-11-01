@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const name_url = "/shop";
+  const name_url = "";
   const getMenuChild = (items) => {
     let html = "";
     items.map((item) => {
@@ -120,7 +120,7 @@ $(document).ready(function () {
     { id: 1, name: "Giới thiệu", link: "", numberOder: 1 },
     { id: 2, name: "Bảng giá", link: "", numberOder: 2 },
     { id: 3, name: "Sản phẩm", link: "", numberOder: 3 },
-    { id: 4, name: "Liên hệ", link: "", numberOder: 4 },
+    { id: 4, name: "Liên hệ (0965.678.726 - Mrs.Gấm)", link: "", numberOder: 4 },
   ];
   const categories = [
     {
