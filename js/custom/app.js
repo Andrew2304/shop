@@ -604,7 +604,7 @@ $(document).ready(function () {
       numberOder: 6,
       isHot: false,
       price: 10_000,
-      priceText: "Tùy loại",
+      priceText: "Theo thời điểm",
       oldPrice: 15_000,
       oldPrice: "15_000",
       rate: 4,
