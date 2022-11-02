@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  // const name_url = "";
-  const name_url = "/shop";
+  const name_url = "";
+  // const name_url = "/shop";
   const getMenuChild = (items) => {
     let html = "";
     items.map((item) => {
@@ -35,7 +35,6 @@ $(document).ready(function () {
                     <a href="#"><i class="zmdi zmdi-star"></i></a>
                     <a href="#"><i class="zmdi zmdi-star"></i></a>
                     <a href="#"><i class="zmdi zmdi-star"></i></a>
-                    <a href="#"><i class="zmdi zmdi-star"></i></a>
                     <a href="#"><i class="zmdi zmdi-star-half"></i></a>
                   </div>
                   <h3 class="pro-price">${item.priceText}</h3>
@@ -59,7 +58,6 @@ $(document).ready(function () {
             </div>`;
   };
   const ProductItem2 = (item) => {
-    console.log(item.description);
     return `<div class="col-md-12">
               <div class="shop-list product-item">
                 <div class="product-img product-img-2">
@@ -246,7 +244,7 @@ $(document).ready(function () {
       numberOder: 4,
       isHot: true,
       price: 10_000,
-      priceText: "240.000 VNĐ/1Kg",
+      priceText: "250.000 - 280.000 VNĐ/1Kg",
       oldPrice: 15_000,
       oldPrice: "15_000",
       rate: 4,
@@ -264,7 +262,7 @@ $(document).ready(function () {
       numberOder: 5,
       isHot: true,
       price: 10_000,
-      priceText: "250.000 VNĐ/1Kg",
+      priceText: "260.000 VNĐ/1Kg",
       oldPrice: 15_000,
       oldPrice: "15_000",
       rate: 4,
@@ -376,7 +374,7 @@ $(document).ready(function () {
       oldPrice: 15_000,
       oldPrice: "15_000",
       rate: 4,
-      image: `${name_url}/images/products/ca_thu_man.png`,
+      image: `${name_url}/images/products/kho_ca_thu_man.jpg`,
       isActive: true,
       isSale: true,
       guide: "",
@@ -448,7 +446,7 @@ $(document).ready(function () {
       oldPrice: 15_000,
       oldPrice: "15_000",
       rate: 4,
-      image: `${name_url}/images/products/muc_kho_loai_30_con.png`,
+      image: `${name_url}/images/products/muc_kho_loai_28_30_con.png`,
       isActive: true,
       isSale: true,
       guide: "",
@@ -534,11 +532,11 @@ $(document).ready(function () {
       numberOder: 6,
       isHot: false,
       price: 10_000,
-      priceText: "180.000 VNĐ/1Kg",
+      priceText: "200.000 VNĐ/1Kg",
       oldPrice: 15_000,
       oldPrice: "15_000",
       rate: 4,
-      image: `${name_url}/images/products/cha_ca_thu_phan_thiet.png`,
+      image: `${name_url}/images/products/cha_ca_phan_thiet.png`,
       isActive: true,
       isSale: true,
       guide: "",
@@ -606,7 +604,7 @@ $(document).ready(function () {
       numberOder: 6,
       isHot: false,
       price: 10_000,
-      priceText: "10_000 VNĐ/1Kg",
+      priceText: "Tùy loại",
       oldPrice: 15_000,
       oldPrice: "15_000",
       rate: 4,
@@ -635,6 +633,24 @@ $(document).ready(function () {
       whyChose: "",
       categoryId: 1,
     },
+    {
+      id: 25,
+      name: "BẠCH TUỘC",
+      description: "",
+      numberOder: 6,
+      isHot: false,
+      price: 10_000,
+      priceText: "220.000 - 250.000 VNĐ/1Kg",
+      oldPrice: 15_000,
+      oldPrice: "15_000",
+      rate: 4,
+      image: `${name_url}/images/products/bach_tuoc.png`,
+      isActive: true,
+      isSale: true,
+      guide: "",
+      whyChose: "",
+      categoryId: 1,
+    },
   ];
 
   const App = {
@@ -645,7 +661,7 @@ $(document).ready(function () {
       App.renderHotProducts();
     },
     getProducts: (filter = {}) => {
-      let tmpProducts = [...products];
+      let tmpProducts = products.filter((item) => item.isActive);
 
       if (filter?.isNumberOrder) {
         tmpProducts = tmpProducts.sort((a, b) => a.orderNumber - b.orderNumber);
