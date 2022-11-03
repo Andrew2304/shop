@@ -460,7 +460,7 @@ $(document).ready(function () {
       numberOder: 16,
       isHot: false,
       price: 10_000,
-      priceText: "1.050.000 VNĐ/1Kg",
+      priceText: "950.000 VNĐ/1Kg",
       oldPrice: 15_000,
       oldPrice: "15_000",
       rate: 4,
