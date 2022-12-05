@@ -683,7 +683,7 @@ $(document).ready(function () {
       console.log("Ping success");
     });
   };
-  setInterval(() => {
-    pingHerokuServer();
-  }, 900000);
+  // setInterval(() => {
+  //   pingHerokuServer();
+  // }, 900000);
 });
